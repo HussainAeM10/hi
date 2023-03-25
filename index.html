@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>mamamia.bh Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/HussainAeM10/hi/main/328146931_924724291904876_7723833694273480317_n.jpg">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hey what's up girls !!.. what do we have to Calculate</h1>
+      <form id="calcForm">
+        <div class="row">
+          <div class="input-group">
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="product-price">Product Price (per kg or g)</label>
+            <input type="number" id="product-price" min="0" step="0.01" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="product-weight">Product Weight</label>
+            <input type="number" id="product-weight" min="0" step="0.01" required>
+            <select id="weight-unit">
+              <option value="g">g</option>
+              <option value="kg">kg</option>
+            </select>
+          </div>
+          <div class="arrow"></div>
+          <div class="input-group">
+            <label for="deduct-weight">Weight to Deduct</label>
+            <input type="number" id="deduct-weight" min="0" step="0.01" required>
+            <select id="deduct-unit">
+              <option value="g">g</option>
+              <option value="kg">kg</option>
+            </select>
+          </div>
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+      <div id="results" class="hidden">
+        <h2>Results:</h2>
+        <p><span id="deducted-weight-output"></span> grams will be BD <span id="deducted-price-output"></span> Remaining = BD <span id="total-price-output"></span></p>
+        <p>Remaining weight: <span id="remaining-weight-output"></span> grams</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
