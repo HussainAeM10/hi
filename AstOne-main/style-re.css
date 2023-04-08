@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Alkatra', sans-serif;
+    background-image: url('https://raw.githubusercontent.com/fadullalah/AstOne/main/img/ssssssssssss.png');
+     background-repeat: repeat;
+     background-size: auto;
+     color: #e5dcdc;
+    
+  }
+
+  .disabled-message-r {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #cfcfcf;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #c0c0c0;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+
+  .top-middle {
+    position: -ms-page;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #ababab;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
